@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "target": "es2016",
-    // Generate ecmascript modules
+    // Generate AMD modules
     "module": "AMD",
 
-    // Folder where the compiled JavaScript will go
+    // Combine all the files into a single file
     "outFile": "dist/main.js",
 
     // This will print out all the places TypeScript is looking for an imported module
