@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Home</title>
+    <!-- If you see "ReferenceError: Can't find variable: define", you need to include require.js -->
+    <script src="https://unpkg.com/requirejs@2.3.7/require.js"></script>
+    <!-- type=module is needed to use ES6 modules in the browser -->
+    <script type="module" src="./dist/main.js"></script>
+    <script>
+      // we need to require the module to see the console.logs printed
+      requirejs(["index"], function (index) {
+        // prints {__esModule: true}
+        console.log(index);
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Home</h1>
+    <p>Welcome to the home page.</p>
+  </body>
+</html>
