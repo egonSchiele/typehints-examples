@@ -1,10 +1,5 @@
-Exactly the same as [02-node-modules](../02-node-modules/), except
+Exactly the same as [02b-node-modules-on-vite](../02b-node-modules-on-vite) except instead of linking to `dist/index.js` in `index.html`, I link to `index.ts`.
 
-1. Install vite (`npm i -D vite`), and
-2. Instead of starting a Python server, start vite (`npx vite`).
+Run `npx vite build`. It will look for an `index.html` file by default, use that as an entry point, and go through all the JavaScript files linked from there.
 
-That's all! With just that, suddenly the npm package will resolve fine and everything will work correctly.
-
-## vite build
-
-If, instead of serving files, you want vite to make a build that you can then upload to Vercel or render.com or whatever, run `npx vite build`. It will look for an `index.html` file by default, use that as an entry point, and go through all the JavaScript files linked from there.
+It will make a build for you in a folder called `dist`. You can serve it from any static server, like the Python server, vite, nginx, vercel, render.com...
