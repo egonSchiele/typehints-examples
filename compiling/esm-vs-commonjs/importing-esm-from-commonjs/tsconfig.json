@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    // Generate ecmascript modules
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    // Folder where the compiled JavaScript will go
+    "outDir": "./dist",
+
+    // This will print out all the places TypeScript is looking for an imported module
+    "traceResolution": true
+  }
+}

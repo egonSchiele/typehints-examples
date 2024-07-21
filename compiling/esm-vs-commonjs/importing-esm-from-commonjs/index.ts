@@ -1,3 +1,3 @@
 console.log("Hello, world!");
-import foo from "./foo.cjs";
+const foo = require("./foo.js");
 console.log(foo); // adit
