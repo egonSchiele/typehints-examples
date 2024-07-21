@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    // Generate commonjs modules
+    "module": "CommonJS",
+
+    // Without this, TypeScript will not look for modules in node_modules
+    "moduleResolution": "node",
+
+    // Folder where the compiled JavaScript will go
+    "outDir": "./dist",
+
+    // This will print out all the places TypeScript is looking for an imported module
+    "traceResolution": true
+  }
+}
