@@ -2,10 +2,10 @@
   "compilerOptions": {
     "target": "es2016",
     // Generate ecmascript modules
-    "module": "ES6",
+    "module": "NodeNext",
 
     // Without this, TypeScript will not look for modules in node_modules
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
 
     // Folder where the compiled JavaScript will go
     "outDir": "./dist",
